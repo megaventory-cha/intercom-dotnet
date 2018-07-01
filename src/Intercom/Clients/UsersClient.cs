@@ -422,7 +422,7 @@ namespace Intercom.Clients
             return result.Result;
         }
 
-        public User PermanentDeleteUser(String id)
+        public User PermanentlyDeleteUser(String id)
         {
             if (String.IsNullOrEmpty(id))
             {

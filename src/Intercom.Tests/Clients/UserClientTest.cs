@@ -45,5 +45,11 @@ namespace Intercom.Test
         {
             Assert.Throws<ArgumentException>(() => usersClient.Update(new User()));
         }
+
+        [Test()]
+        public void PermanentlyDeleteUser_NoId_ThrowException()
+        {
+            Assert.Throws<ArgumentNullException>(() => usersClient.PermanentlyDeleteUser(null));
+        }
     }
 }
